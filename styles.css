@@ -1,0 +1,215 @@
+
+body{
+    margin: 0;
+    font-family:sans-serif;
+    overflow-x:hidden;
+    
+    background-color: rgb(128, 21, 39);
+}
+h1{
+    font-size: 3.5rem;
+  } 
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+p{
+    font-size: 1.4rem;  
+  }
+/* 
+  css animations */
+.typewriter{
+    overflow:hidden;
+
+    margin:0 auto;
+    letter-spacing:0.5rem;
+    animation: typing 3.5s steps(40, end);
+}
+
+/* typing effect */
+@keyframes typing{
+    from {width: 0%}
+    to {width:100%}
+}
+
+.anime-class{
+animation-name:fade-etyn;
+animation-duration:3s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-out;
+
+}
+
+@keyframes fade-etyn{
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* button design */
+.btn-primary{
+    background-color: rgb(128, 21, 39);
+    font-size: 20px;
+    border: rgb(128, 21, 39);
+}
+
+/* first div */
+.welcome{
+    position: relative;
+    height:auto;
+    width: 100%;
+    text-align: center;
+  }
+  /* first div's paragraph */
+.welcome-pg{    
+    color: #fff;
+    padding: 20px;
+}
+/* for each images in the divs */
+.welcome{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("bg-11.jpeg");
+    background-size: cover;
+    text-align: center;
+  }
+.welcome-pg{        
+    color: #fff;
+}
+
+/* share designs */
+.share{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("bg-7.jpeg");
+    background-size: cover;
+    text-align: center;
+}
+
+.share-pg p{
+    font-size: 1.5rem;
+    padding: 30px;
+}
+.back-img{
+    position: relative;
+    top: 20%;
+    bottom: 20%;
+}
+
+.share{
+    display:block;
+    position: relative;
+    width: 100%;
+    
+}
+.share-pg{ 
+    color:#26f7fd;
+    text-align: center;
+
+}
+.share-pg p{
+    font-size: 1.5rem;
+}
+.sign-up{
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+.log-in{
+    color: rgb(128, 21, 39);
+    border: 1px solid rgb(128, 21, 39);
+    border-radius: 50px;
+}
+
+
+.more-wrapper{
+    color:white;
+    background-color: rgb(128, 21, 39);
+
+}
+.more-img{
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 100px;
+}
+#last-text{
+    font-size : 150%;
+}
+.share{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    margin-top: -24px;
+    background-image: url("bg-7.jpeg");
+    background-size: cover;
+    text-align: center;
+}
+
+.more-wrapper{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-image: url("bg-9.jpeg");
+    background-size: cover;
+    text-align: left;
+    background-position: center;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    color: rgb(128, 21, 39);
+
+}
+.more-pg{
+    padding: 20px;
+}
+/* designs for the loading page */
+#loader {
+    border: 12px solid #f3fef3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 80px;
+    height: 80px;
+    animation: wheel 1s linear infinite;
+}
+
+@keyframes wheel{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.center{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* 
+responsive designs */
+@media only screen and (min-width:751px){
+
+.typewriter{white-space:nowrap;}
+    html{
+        font-size: 160%;
+        height: 80%;
+    }
+.more-wrapper{
+    color: #fff;
+}
+    
+}
+@media only screen and (max-width:751px){
+    html{
+    font-size: 100%;}
+}
+@media only screen and (max-width:483px){
+    html{
+    font-size: 100%;}
+}
+@media only screen and (max-width:369px){
+    html{
+    font-size: 85%;}
+}
